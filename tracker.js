@@ -3,7 +3,7 @@ import { View, Text, Button, Alert } from 'react-native';
 import * as Location from 'expo-location';
 import * as Sharing from 'expo-sharing';
 
-const LocationSender = ({ navigation }) => { // Receive navigation prop
+const LocationSender = ({ navigation }) => { //
   const [location, setLocation] = useState(null);
 
   useEffect(() => {
@@ -49,7 +49,7 @@ const LocationSender = ({ navigation }) => { // Receive navigation prop
         </View>
       )}
       <Button title="Share Location" onPress={shareLocation} />
-      <Button title="Go Back" onPress={() => navigation.goBack()} /> {/* Button to navigate back */}
+      <Button title="Go Back" onPress={() => navigation.goBack()} /> 
     </View>
   );
 };
